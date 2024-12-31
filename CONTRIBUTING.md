@@ -1,4 +1,4 @@
-# Contributing to Privy
+# Contributing to KittyTheCoder
 
 First of all, thank you for taking some of your time to contribute to the project. You're awesome 🦆👍
 
@@ -36,7 +36,7 @@ To build the project, press `F5`. It should run the `run - app/vscode` task.
 This will:
 
 1. Build the project
-2. Open a new "Extension Development Host" VS Code window, with your local code overriding your "Privy" extension
+2. Open a new "Extension Development Host" VS Code window, with your local code overriding your "KittyTheCoder" extension
 
 It's handy to test your changes in integration with VS Code API.
 

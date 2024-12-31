@@ -15,7 +15,9 @@ export async function indexRepository({
   const repositoryPath = vscode.workspace.workspaceFolders?.[0]?.uri.fsPath;
 
   if (repositoryPath == undefined) {
-    vscode.window.showErrorMessage("Privy: No workspace folder is open.");
+    vscode.window.showErrorMessage(
+      "KittyTheCoder: No workspace folder is open."
+    );
     return;
   }
 

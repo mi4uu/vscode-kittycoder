@@ -1,6 +1,6 @@
 ---
 name: 🐛 Bug report
-about: When Privy crashes or has undesired side-effects, it's a bug
+about: When KittyTheCoder crashes or has undesired side-effects, it's a bug
 title: ""
 labels: "bug"
 assignees: ""

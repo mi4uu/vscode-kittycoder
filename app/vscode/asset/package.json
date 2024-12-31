@@ -1,8 +1,17 @@
 {
-  "publisher": "Privy",
+  "publisher": "Michami4uuLipiski",
+  "author": {
+    "email": "michal.lipinski@gmail.com",
+    "name": "Michał \"mi4uu\" Lipiński"
+  },
+  "repository": {
+    "url": "https://github.com/mi4uu/vscode-kittycoder"
+  },
+  "pricing": "Free",
+  "packageManager": "bun@1.1.42",
   "name": "kitty-the-coder-vscode",
-  "version": "0.2.8",
-  "displayName": "Privy - AI coding Autocomplete and chat that runs locally. ",
+  "version": "0.0.1",
+  "displayName": "KittyTheCoder - AI coding Autocomplete and chat that runs locally. ",
   "description": "Get code suggestions, chat with code, explain code, generate tests, find bugs, etc.",
   "keywords": [
     "ai",
@@ -38,9 +47,8 @@
     "node": ">=18",
     "vscode": "^1.72.0"
   },
-  "homepage": "https://github.com/srikanth235/kitty-the-coder",
-  "repository": "https://github.com/srikanth235/kitty-the-coder",
-  "bugs": "https://github.com/srikanth235/kitty-the-coder/issues",
+  "homepage": "https://github.com/mi4uu/vscode-kittycoder",
+  "bugs": "https://github.com/mi4uu/vscode-kittycoder/issues",
   "extensionKind": [
     "workspace"
   ],
@@ -53,77 +61,77 @@
       {
         "command": "kitty-the-coder.startChat",
         "title": "Start Chat 💬",
-        "category": "Privy",
+        "category": "KittyTheCoder",
         "icon": "$(comment-discussion)"
       },
       {
         "command": "kitty-the-coder.explainCode",
         "title": "Explain Code",
-        "category": "Privy",
+        "category": "KittyTheCoder",
         "icon": "$(comment-discussion)"
       },
       {
         "command": "kitty-the-coder.generateCode",
         "title": "Generate Code 🪄",
-        "category": "Privy",
+        "category": "KittyTheCoder",
         "icon": "$(wand)"
       },
       {
         "command": "kitty-the-coder.generateUnitTest",
         "title": "Generate Unit Test 🪄",
-        "category": "Privy",
+        "category": "KittyTheCoder",
         "icon": "$(beaker)"
       },
       {
         "command": "kitty-the-coder.diagnoseErrors",
         "title": "Diagnose Errors",
-        "category": "Privy",
+        "category": "KittyTheCoder",
         "icon": "$(search-fuzzy)"
       },
       {
         "command": "kitty-the-coder.findBugs",
         "title": "Find Bugs",
-        "category": "Privy",
+        "category": "KittyTheCoder",
         "icon": "$(bug)"
       },
       {
         "command": "kitty-the-coder.touchBar.startChat",
-        "category": "Privy",
+        "category": "KittyTheCoder",
         "title": "💬"
       },
       {
         "command": "kitty-the-coder.showChatPanel",
         "title": "Show Chat Panel 💬",
-        "category": "Privy",
+        "category": "KittyTheCoder",
         "icon": "$(comment-discussion)"
       },
       {
         "command": "kitty-the-coder.getStarted",
         "title": "Get Started",
-        "category": "Privy",
+        "category": "KittyTheCoder",
         "icon": "$(question)"
       },
       {
         "command": "kitty-the-coder.openSettings",
         "title": "Open Settings",
-        "category": "Privy",
+        "category": "KittyTheCoder",
         "icon": "$(settings)"
       },
       {
         "command": "kitty-the-coder.reloadTemplates",
         "title": "Reload Templates",
-        "category": "Privy",
+        "category": "KittyTheCoder",
         "icon": "$(sync)"
       },
       {
         "command": "kitty-the-coder.showLogs",
         "title": "Show Logs",
-        "category": "Privy",
+        "category": "KittyTheCoder",
         "icon": "$(output)"
       }
     ],
     "configuration": {
-      "title": "Privy",
+      "title": "KittyTheCoder",
       "properties": {
         "kitty-the-coder.logger.level": {
           "type": "string",
@@ -140,7 +148,7 @@
             "Only show warnings and errors",
             "Only show errors"
           ],
-          "markdownDescription": "Specify the verbosity of logs that will appear in 'Privy: Show Logs'.",
+          "markdownDescription": "Specify the verbosity of logs that will appear in 'KittyTheCoder: Show Logs'.",
           "scope": "application",
           "order": 1
         },
@@ -266,7 +274,7 @@
     ],
     "submenus": [
       {
-        "label": "Privy",
+        "label": "KittyTheCoder",
         "id": "kitty-the-coder.submenu"
       }
     ],
@@ -333,7 +341,7 @@
       "activitybar": [
         {
           "id": "kitty-the-coder",
-          "title": "Privy",
+          "title": "KittyTheCoder",
           "icon": "media/sidebar-icon.svg"
         }
       ]
@@ -350,12 +358,12 @@
     "walkthroughs": [
       {
         "id": "kitty-the-coder",
-        "title": "Privy",
+        "title": "KittyTheCoder",
         "description": "Your AI Chat Assistant in Visual Studio Code",
         "steps": [
           {
             "id": "setup",
-            "title": "Setup Privy",
+            "title": "Setup KittyTheCoder",
             "description": "Ensure LLM is running locally before getting started.",
             "media": {
               "markdown": "walkthrough/setup.md"
@@ -372,7 +380,7 @@
           {
             "id": "chat",
             "title": "AI Chat",
-            "description": "Chat with Privy about your code and software development topics.",
+            "description": "Chat with KittyTheCoder about your code and software development topics.",
             "media": {
               "markdown": "walkthrough/chat.md"
             }
@@ -380,7 +388,7 @@
           {
             "id": "explain-code",
             "title": "Explain Code",
-            "description": "Chat with Privy about your code and software development topics.",
+            "description": "Chat with KittyTheCoder about your code and software development topics.",
             "media": {
               "markdown": "walkthrough/explain-code.md"
             }
@@ -388,7 +396,7 @@
           {
             "id": "generate-unit-test",
             "title": "Generate Unit Test",
-            "description": "Chat with Privy about your code and software development topics.",
+            "description": "Chat with KittyTheCoder about your code and software development topics.",
             "media": {
               "markdown": "walkthrough/generate-unit-test.md"
             }
@@ -396,7 +404,7 @@
           {
             "id": "find-bugs",
             "title": "Find Bugs",
-            "description": "Chat with Privy about your code and software development topics.",
+            "description": "Chat with KittyTheCoder about your code and software development topics.",
             "media": {
               "markdown": "walkthrough/find-bugs.md"
             }
@@ -404,7 +412,7 @@
           {
             "id": "diagnose-errors",
             "title": "Diagnose Errors",
-            "description": "Chat with Privy about your code and software development topics.",
+            "description": "Chat with KittyTheCoder about your code and software development topics.",
             "media": {
               "markdown": "walkthrough/diagnose-errors.md"
             }
@@ -412,7 +420,7 @@
           {
             "id": "tips-and-tricks",
             "title": "Tips and Tricks",
-            "description": "How to get the most out of Privy.",
+            "description": "How to get the most out of KittyTheCoder.",
             "media": {
               "markdown": "walkthrough/tips-and-tricks.md"
             }

@@ -1,5 +1,5 @@
 <div align="center">
-  <h1><b>💬 Privy</b></h1>
+  <h1><b>💬 KittyTheCoder</b></h1>
   <p>
     <strong>An open-source alternative to GitHub copilot that runs locally.</strong>
   </p>
@@ -45,14 +45,14 @@ You can also pick a model by evaluating your local LLMs using [Benchllama](https
 
 ## 🚀 Quick Install
 
-You can install Privy extension from the Visual Studio Code Marketplace or from the Open VSX Registry.
+You can install KittyTheCoder extension from the Visual Studio Code Marketplace or from the Open VSX Registry.
 
 - [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=kitty-the-coder.kitty-the-coder-vscode)
-- [Open VSX Registry](https://open-vsx.org/extension/Privy/kitty-the-coder-vscode)
+- [Open VSX Registry](https://open-vsx.org/extension/KittyTheCoder/kitty-the-coder-vscode)
 
 ## ⚙️ Configuration Options
 
-Please set the following options in the **settings** for Privy extension.
+Please set the following options in the **settings** for KittyTheCoder extension.
 
 - **kitty-the-coder.provider**(`required`): Pick the platform that is being used for running LLMs locally. There is support for using OpenAI, but this will affect the privacy aspects of the solution. The default is `Ollama`.
 - **kitty-the-coder.providerUrl**(`required`): The URL of the platform that is being used for running LLMs locally. The default is `http://localhost:11434`.
@@ -80,7 +80,7 @@ Please set the following options in the **settings** for Privy extension.
 
 # 💡 Tips and Tricks
 
-Understanding these concepts will help you get the most out of Privy.
+Understanding these concepts will help you get the most out of KittyTheCoder.
 
 - **Be specific**.
   When you ask for, e.g., code changes, include concrete names and describe the desired outcome. Avoid vague references.
@@ -88,11 +88,11 @@ Understanding these concepts will help you get the most out of Privy.
   You can include the programming language ("in Rust") or other relevant contexts for basic questions.
   You can select a meaningful code snippet for code explanations and error diagnosis.
 - **Do not trust answers blindly**.
-  It's a big step for Privy to be able to respond to your questions.
+  It's a big step for KittyTheCoder to be able to respond to your questions.
   It might respond with inaccurate answers, especially when talking about
   less well-known topics or when the conversation gets too detailed.
 - **Use different chat threads for different topics**.
-  Shorter threads with specific topics will help Privy respond more accurately.
+  Shorter threads with specific topics will help KittyTheCoder respond more accurately.
 
 ## 🤝 Credits
 

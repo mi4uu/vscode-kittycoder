@@ -9,7 +9,7 @@
   "id": "find-code",
   "engineVersion": 0,
   "label": "Find code",
-  "description": "Find code in the Privy codebase.",
+  "description": "Find code in the KittyTheCoder codebase.",
   "header": {
     "title": "Find code",
     "useFirstMessageAsTitle": true,

@@ -1,10 +1,10 @@
-# Privy Templates
+# KittyTheCoder Templates
 
-Privy comes with handy built-in commands, such as Explain Code, Edit Code, Generate Tests, etc.
+KittyTheCoder comes with handy built-in commands, such as Explain Code, Edit Code, Generate Tests, etc.
 
 But what if you have a specific need that isn't entirely covered? What if you want to craft an AI Chat that knows specifically about your project or your conventions? How cool would it be to have the answers in your language?
 
-That's what you can get with Privy Templates! 🌈
+That's what you can get with KittyTheCoder Templates! 🌈
 
 Here are some ideas of what you can do with them:
 
@@ -17,13 +17,13 @@ The best part is that you can share them with your colleagues, friends, or enemi
 
 ## How to define your own templates?
 
-Add Template File (`.rdt.md`) files to the `.kitty-the-coder/template` folder in your workspace. See the [templates in the Privy repository for examples](https://github.com/srikanth235/kitty-the-coder/tree/main/template).
+Add Template File (`.rdt.md`) files to the `.kitty-the-coder/template` folder in your workspace. See the [templates in the KittyTheCoder repository for examples](https://github.com/srikanth235/kitty-the-coder/tree/main/template).
 
-Run the "Privy: Start Custom Chat… 💬" command to use your custom conversations.
+Run the "KittyTheCoder: Start Custom Chat… 💬" command to use your custom conversations.
 
-After you have changed a template, use the "Privy: Reload Templates" command to see your updates.
+After you have changed a template, use the "KittyTheCoder: Reload Templates" command to see your updates.
 
-To help you debug, use the "Privy: Show logs" command to open the Output panel and see the prompt.
+To help you debug, use the "KittyTheCoder: Show logs" command to open the Output panel and see the prompt.
 
 ## Example: Drunken Pirate
 
@@ -32,17 +32,17 @@ The ["Drunken Pirate" template](https://github.com/srikanth235/kitty-the-coder/b
 To see it in action:
 
 1. Save the template as `.kitty-the-coder/template/drunken-pirate.rdt.md` in your workspace
-2. Use "Privy: Reload Templates"
-3. Use "Privy: Start Custom Chat… 💬"
+2. Use "KittyTheCoder: Reload Templates"
+3. Use "KittyTheCoder: Start Custom Chat… 💬"
 4. Pick "Ask a drunken pirate"
 
 This template is a conversation between a developer and a drunken pirate. The drunken pirate starts by describing the selected code.
 
-Want to craft your own? Let's dig into how Privy Templates are structured.
+Want to craft your own? Let's dig into how KittyTheCoder Templates are structured.
 
-## Privy Template Structure
+## KittyTheCoder Template Structure
 
-Privy Templates are [GitHub-flavored Markdown](https://github.github.com/gfm/) files with special fenced code sections. You can use regular markdown to document your template and the fenced code sections to define it.
+KittyTheCoder Templates are [GitHub-flavored Markdown](https://github.github.com/gfm/) files with special fenced code sections. You can use regular markdown to document your template and the fenced code sections to define it.
 
 There are two types of fenced code sections:
 
@@ -80,14 +80,14 @@ Configuration sections have the following basic properties:
 
 - `id`: Id of the conversation type. It needs to be unique.
 - `engineVersion`: Must be 0 for now. Warning: we might make breaking changes to the template format while we are on version 0.
-- `label`: Short description of the conversation type. It will be displayed when you run the "Privy: Start Custom Chat… 💬" command.
-- `description`: Longer description of the conversation type. It will be displayed when you run the "Privy: Start Custom Chat… 💬" command.
-- `tags`: An optional list of tags that can be used to filter the conversation types in the "Privy: Start Custom Chat… 💬" command. Defaults to `[]`.
-- `header`: The header that is shown in the Privy side panel for conversations of this type. It has 3 properties:
-  - `title`: The title of the conversation. It will be shown in the Privy side panel. You can use [template variables](#variables) here with `{{variableName}}`.
+- `label`: Short description of the conversation type. It will be displayed when you run the "KittyTheCoder: Start Custom Chat… 💬" command.
+- `description`: Longer description of the conversation type. It will be displayed when you run the "KittyTheCoder: Start Custom Chat… 💬" command.
+- `tags`: An optional list of tags that can be used to filter the conversation types in the "KittyTheCoder: Start Custom Chat… 💬" command. Defaults to `[]`.
+- `header`: The header that is shown in the KittyTheCoder side panel for conversations of this type. It has 3 properties:
+  - `title`: The title of the conversation. It will be shown in the KittyTheCoder side panel. You can use [template variables](#variables) here with `{{variableName}}`.
   - `useFirstMessageAsTitle`: An optional boolean value. Defaults to `false`. If it is `true`, the first message of the conversation will be used as the title once there is a message.
-  - `icon`: The icon that is shown in the Privy side panel for conversations of this type. Only the [Codicon](https://microsoft.github.io/vscode-codicons/dist/codicon.html) `type` is supported at the moment. You can set the `value` property to the codicon that you want to show.
-- `isEnabled`: Whether the conversation type is enabled. If it is disabled, it will not be shown in the "Privy: Start Custom Chat… 💬" command. Defaults to `true`.
+  - `icon`: The icon that is shown in the KittyTheCoder side panel for conversations of this type. Only the [Codicon](https://microsoft.github.io/vscode-codicons/dist/codicon.html) `type` is supported at the moment. You can set the `value` property to the codicon that you want to show.
+- `isEnabled`: Whether the conversation type is enabled. If it is disabled, it will not be shown in the "KittyTheCoder: Start Custom Chat… 💬" command. Defaults to `true`.
 - `chatInterface`: Optional. The chat interface that is used for this conversation type. Defaults to `message-exchange`. Set to `instruction-refinement` if you want to show a single edit box that the user can change instead of a message exchange.
 
 ### Variables
@@ -165,7 +165,7 @@ Example:
   }
 </pre>
 
-Prompts describe how a user message in a chat (or the initial analysis) is processed. The prompt definitions contain parameters for a call to the OpenAI API and additional properties. Privy calls the [OpenAI Completion API](https://platform.openai.com/docs/api-reference/completions) with the `text-davinci-003` model.
+Prompts describe how a user message in a chat (or the initial analysis) is processed. The prompt definitions contain parameters for a call to the OpenAI API and additional properties. KittyTheCoder calls the [OpenAI Completion API](https://platform.openai.com/docs/api-reference/completions) with the `text-davinci-003` model.
 
 - `placeholder`: The placeholder text that is shown in the chat while the message is being processed.
 - `maxTokens`: Upper bound on how many tokens will be returned.
@@ -210,12 +210,12 @@ You pirate speak and refer to sailing and the sea where possible.
 ```
 </pre>
 
-## Get started with Privy Templates
+## Get started with KittyTheCoder Templates
 
 The easiest way to get started with templates is to copy [some example templates](https://github.com/srikanth235/kitty-the-coder/tree/master/template) and start modifying them.
 
-Run the "Privy: Start Custom Chat… 💬" command to use your custom conversations.
+Run the "KittyTheCoder: Start Custom Chat… 💬" command to use your custom conversations.
 
-After you have changed a Privy template, use the "Privy: Reload Templates" command to see your updates.
+After you have changed a KittyTheCoder template, use the "KittyTheCoder: Reload Templates" command to see your updates.
 
-To help you debug, use the "Privy: Show logs" command to open the Output panel and see the prompt that is sent to OpenAI.
+To help you debug, use the "KittyTheCoder: Show logs" command to open the Output panel and see the prompt that is sent to OpenAI.

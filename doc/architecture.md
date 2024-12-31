@@ -1,19 +1,19 @@
-# Architecture - Privy for Visual Studio Code
+# Architecture - KittyTheCoder for Visual Studio Code
 
 ## Overview
 
-Privy is a [Visual Studio Code extension](https://code.visualstudio.com/api). It has two main components:
+KittyTheCoder is a [Visual Studio Code extension](https://code.visualstudio.com/api). It has two main components:
 
 - The extension itself, which is the main entry point for the extension. It contains the extension static and logic.
 - The sidebar webview, which is an iframe that runs in the sidebar. It renders the UI and forwards user input to the extension.
 
-Visual Studio Code initializes the Privy extension on load. The extension then sets up callback for e.g. the registered commands and initializes the internal structure. The webview is loaded by Visual Studio Code when it is first opened.
+Visual Studio Code initializes the KittyTheCoder extension on load. The extension then sets up callback for e.g. the registered commands and initializes the internal structure. The webview is loaded by Visual Studio Code when it is first opened.
 
 ```mermaid
 graph TD
-subgraph Privy Extension
-  A[Privy Extension]
-  B[Privy Side Bar Webview]
+subgraph KittyTheCoder Extension
+  A[KittyTheCoder Extension]
+  B[KittyTheCoder Side Bar Webview]
 end
 C[OpenAI API]
 D[Visual Studio Code]
@@ -35,7 +35,7 @@ A --request completion----> C
 
 ## Project Structure
 
-Privy for Visual Studio Code is written in [TypeScript](https://www.typescriptlang.org/). It uses [pnpm](https://pnpm.io/) as package manager and [Nx](https://nx.dev/) for monorepo tooling.
+KittyTheCoder for Visual Studio Code is written in [TypeScript](https://www.typescriptlang.org/). It uses [pnpm](https://pnpm.io/) as package manager and [Nx](https://nx.dev/) for monorepo tooling.
 
 The project is structured as follows:
 
@@ -44,7 +44,7 @@ The project is structured as follows:
 - [`lib/common`](https://github.com/srikanth235/kitty-the-coder/tree/main/lib/common): API definitions for the message and state protocol between the extension and the webview. Also contains shared types and utilities.
 - [`lib/extension`](https://github.com/srikanth235/kitty-the-coder/tree/main/lib/extension): The main extension logic.
 - [`lib/webview`](https://github.com/srikanth235/kitty-the-coder/tree/main/lib/webview): The webview. It is written using [React](https://reactjs.org/).
-- [`template`](https://github.com/srikanth235/kitty-the-coder/tree/main/template): Privy Conversation Templates. Some are used in the extension, others are meant as examples for users.
+- [`template`](https://github.com/srikanth235/kitty-the-coder/tree/main/template): KittyTheCoder Conversation Templates. Some are used in the extension, others are meant as examples for users.
 
 ## Extension Module: `lib/extension`
 

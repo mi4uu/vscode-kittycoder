@@ -7,10 +7,15 @@
         "root": "lib/extension",
         "sourceRoot": "lib/extension",
         "name": "@kitty-the-coder/extension",
-        "tags": ["npm:private"],
+        "tags": [
+          "npm:private"
+        ],
         "metadata": {
           "targetGroups": {
-            "NPM Scripts": ["test", "test-watch"]
+            "NPM Scripts": [
+              "test",
+              "test-watch"
+            ]
           },
           "js": {
             "packageName": "@kitty-the-coder/extension"
@@ -42,7 +47,9 @@
             "parallelism": true
           },
           "compile": {
-            "dependsOn": ["^build"],
+            "dependsOn": [
+              "^build"
+            ],
             "executor": "nx:run-commands",
             "options": {
               "cwd": "lib/extension",
@@ -52,7 +59,9 @@
             "parallelism": true
           },
           "build": {
-            "dependsOn": ["compile"],
+            "dependsOn": [
+              "compile"
+            ],
             "executor": "nx:run-commands",
             "options": {
               "cwd": "lib/extension",
@@ -72,7 +81,9 @@
         "root": "lib/webview",
         "sourceRoot": "lib/webview",
         "name": "@kitty-the-coder/webview",
-        "tags": ["npm:private"],
+        "tags": [
+          "npm:private"
+        ],
         "metadata": {
           "targetGroups": {},
           "js": {
@@ -81,7 +92,9 @@
         },
         "targets": {
           "compile": {
-            "dependsOn": ["^build"],
+            "dependsOn": [
+              "^build"
+            ],
             "executor": "nx:run-commands",
             "options": {
               "cwd": "lib/webview",
@@ -91,7 +104,9 @@
             "parallelism": true
           },
           "build": {
-            "dependsOn": ["compile"],
+            "dependsOn": [
+              "compile"
+            ],
             "executor": "nx:run-commands",
             "options": {
               "cwd": "lib/webview",
@@ -111,7 +126,9 @@
         "root": "lib/common",
         "sourceRoot": "lib/common",
         "name": "@kitty-the-coder/common",
-        "tags": ["npm:private"],
+        "tags": [
+          "npm:private"
+        ],
         "metadata": {
           "targetGroups": {},
           "js": {
@@ -120,7 +137,9 @@
         },
         "targets": {
           "build": {
-            "dependsOn": ["^build"],
+            "dependsOn": [
+              "^build"
+            ],
             "executor": "nx:run-commands",
             "options": {
               "cwd": "lib/common",
@@ -140,7 +159,9 @@
         "root": "app/vscode",
         "sourceRoot": "app/vscode",
         "name": "@kitty-the-coder/vscode",
-        "tags": ["npm:private"],
+        "tags": [
+          "npm:private"
+        ],
         "metadata": {
           "targetGroups": {},
           "js": {
@@ -149,14 +170,18 @@
         },
         "targets": {
           "build": {
-            "dependsOn": ["^build"],
+            "dependsOn": [
+              "^build"
+            ],
             "executor": "nx:noop",
             "configurations": {},
             "options": {},
             "parallelism": true
           },
           "package": {
-            "dependsOn": ["build"],
+            "dependsOn": [
+              "build"
+            ],
             "executor": "nx:run-commands",
             "options": {
               "cwd": "app/vscode",
@@ -166,7 +191,9 @@
             "parallelism": true
           },
           "publish-vscode": {
-            "dependsOn": ["package"],
+            "dependsOn": [
+              "package"
+            ],
             "executor": "nx:run-commands",
             "options": {
               "cwd": "app/vscode",
@@ -176,7 +203,9 @@
             "parallelism": true
           },
           "publish-ovsx": {
-            "dependsOn": ["package"],
+            "dependsOn": [
+              "package"
+            ],
             "executor": "nx:run-commands",
             "options": {
               "cwd": "app/vscode",
@@ -196,7 +225,9 @@
         "root": ".",
         "sourceRoot": ".",
         "name": "@kitty-the-coder/vscode-kitty-the-coder",
-        "tags": ["npm:private"],
+        "tags": [
+          "npm:private"
+        ],
         "metadata": {
           "targetGroups": {
             "NPM Scripts": [

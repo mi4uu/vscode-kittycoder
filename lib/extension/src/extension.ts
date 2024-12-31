@@ -15,8 +15,10 @@ export const activate = async (context: vscode.ExtensionContext) => {
     secretStorage: context.secrets,
   });
 
-  const mainOutputChannel = vscode.window.createOutputChannel("Privy");
-  const indexOutputChannel = vscode.window.createOutputChannel("Privy Index");
+  const mainOutputChannel = vscode.window.createOutputChannel("KittyTheCoder");
+  const indexOutputChannel = vscode.window.createOutputChannel(
+    "KittyTheCoder Index"
+  );
 
   const vscodeLogger = new LoggerUsingVSCodeOutput({
     outputChannel: mainOutputChannel,
@@ -144,7 +146,7 @@ export const activate = async (context: vscode.ExtensionContext) => {
     ),
     vscode.commands.registerCommand("kitty-the-coder.getStarted", async () => {
       await vscode.commands.executeCommand("workbench.action.openWalkthrough", {
-        category: `Privy.kitty-the-coder-vscode#kitty-the-coder`,
+        category: `KittyTheCoder.kitty-the-coder-vscode#kitty-the-coder`,
       });
     }),
     vscode.commands.registerCommand(
@@ -160,7 +162,9 @@ export const activate = async (context: vscode.ExtensionContext) => {
       "kitty-the-coder.reloadTemplates",
       async () => {
         await conversationTypesProvider.loadConversationTypes();
-        vscode.window.showInformationMessage("Privy templates reloaded.");
+        vscode.window.showInformationMessage(
+          "KittyTheCoder templates reloaded."
+        );
       }
     ),
 
