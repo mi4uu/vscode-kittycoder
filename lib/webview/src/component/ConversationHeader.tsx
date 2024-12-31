@@ -1,4 +1,4 @@
-import { webviewApi } from "@privy/common";
+import { webviewApi } from "@kitty-the-coder/common";
 import { on } from "events";
 import React from "react";
 
@@ -17,7 +17,7 @@ export const ConversationHeader: React.FC<{
       {onIconClick && (
         <span>
           &nbsp;
-          < i className="codicon codicon-eye inline" onClick={onIconClick} />
+          <i className="codicon codicon-eye inline" onClick={onIconClick} />
         </span>
       )}
     </div>

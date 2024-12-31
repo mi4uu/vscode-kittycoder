@@ -4,10 +4,10 @@
     <strong>An open-source alternative to GitHub copilot that runs locally.</strong>
   </p>
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"/>
-  <img src="https://img.shields.io/github/v/release/srikanth235/privy" alt="GitHub: Releases"/>
-  <img src="https://img.shields.io/github/issues/srikanth235/privy" alt="GitHub Issues"/>
-  <img src="https://img.shields.io/github/stars/srikanth235/privy" alt="GitHub Stars"/>
-  <a href="https://twitter.com/getprivydev"  style="text-decoration: none; outline: none"><img src="https://img.shields.io/twitter/url/https/twitter.com/getprivydev.svg?style=social&label=%20%40getprivydev" alt="Twitter: @getprivydev"/></a>
+  <img src="https://img.shields.io/github/v/release/srikanth235/kitty-the-coder" alt="GitHub: Releases"/>
+  <img src="https://img.shields.io/github/issues/srikanth235/kitty-the-coder" alt="GitHub Issues"/>
+  <img src="https://img.shields.io/github/stars/srikanth235/kitty-the-coder" alt="GitHub Stars"/>
+  <a href="https://twitter.com/getkitty-the-coderdev"  style="text-decoration: none; outline: none"><img src="https://img.shields.io/twitter/url/https/twitter.com/getkitty-the-coderdev.svg?style=social&label=%20%40getkitty-the-coderdev" alt="Twitter: @getkitty-the-coderdev"/></a>
   <a href="https://discord.gg/wykDxGyUHA"  style="text-decoration: none; outline: none">
   <img src="https://dcbadge.vercel.app/api/server/vAcVQ7XhR2?style=flat&compact=true" alt="Discord"/>
   </a>
@@ -17,11 +17,11 @@
 
 #### Real time code completion
 
-<img src="https://raw.githubusercontent.com/srikanth235/privy/master/app/vscode/asset/media/autocompletion.gif" width="760"/>
+<img src="https://raw.githubusercontent.com/srikanth235/kitty-the-coder/master/app/vscode/asset/media/autocompletion.gif" width="760"/>
 
 #### Chat with AI about your code
 
-<img src="https://raw.githubusercontent.com/srikanth235/privy/master/app/vscode/asset/media/chat.gif" width="760"/>
+<img src="https://raw.githubusercontent.com/srikanth235/kitty-the-coder/master/app/vscode/asset/media/chat.gif" width="760"/>
 
 ## 🛠️ Pre-requisites
 
@@ -47,20 +47,20 @@ You can also pick a model by evaluating your local LLMs using [Benchllama](https
 
 You can install Privy extension from the Visual Studio Code Marketplace or from the Open VSX Registry.
 
-- [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=privy.privy-vscode)
-- [Open VSX Registry](https://open-vsx.org/extension/Privy/privy-vscode)
+- [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=kitty-the-coder.kitty-the-coder-vscode)
+- [Open VSX Registry](https://open-vsx.org/extension/Privy/kitty-the-coder-vscode)
 
 ## ⚙️ Configuration Options
 
 Please set the following options in the **settings** for Privy extension.
 
-- **privy.provider**(`required`): Pick the platform that is being used for running LLMs locally. There is support for using OpenAI, but this will affect the privacy aspects of the solution. The default is `Ollama`.
-- **privy.providerUrl**(`required`): The URL of the platform that is being used for running LLMs locally. The default is `http://localhost:11434`.
-- **privy.autocomplete.mode**: Use this setting for enabling/disabling autocompletion feature.
-- **privy.autocomplete.model**: Input the name of local Ollama model that you want to use for autocompletion. Supported formats are DeepSeek Coder, LLama & Stable Code. We have chosen deepseek-coder:1.3b-base as it requires least amount of VRAM. You can customize based on your hardware setup.
-- **privy.autocomplete.debounceWait**: Use this for setting the time gap before triggering the next completion in milliseconds. Default is 300 ms.
-- **privy.model**: Select the LLM that you want to chat with. Currently, supports DeepSeek, Mistral and CodeLLama. If you want to use other LLMs, please select `custom` and configure `privy.customModel` accordingly.
-- **privy.customModel**: If you want to pick any other models running on your Ollama, please input their name.
+- **kitty-the-coder.provider**(`required`): Pick the platform that is being used for running LLMs locally. There is support for using OpenAI, but this will affect the privacy aspects of the solution. The default is `Ollama`.
+- **kitty-the-coder.providerUrl**(`required`): The URL of the platform that is being used for running LLMs locally. The default is `http://localhost:11434`.
+- **kitty-the-coder.autocomplete.mode**: Use this setting for enabling/disabling autocompletion feature.
+- **kitty-the-coder.autocomplete.model**: Input the name of local Ollama model that you want to use for autocompletion. Supported formats are DeepSeek Coder, LLama & Stable Code. We have chosen deepseek-coder:1.3b-base as it requires least amount of VRAM. You can customize based on your hardware setup.
+- **kitty-the-coder.autocomplete.debounceWait**: Use this for setting the time gap before triggering the next completion in milliseconds. Default is 300 ms.
+- **kitty-the-coder.model**: Select the LLM that you want to chat with. Currently, supports DeepSeek, Mistral and CodeLLama. If you want to use other LLMs, please select `custom` and configure `kitty-the-coder.customModel` accordingly.
+- **kitty-the-coder.customModel**: If you want to pick any other models running on your Ollama, please input their name.
 
 # ✨ Key Features
 
@@ -146,15 +146,15 @@ To help you get your feet wet and become familiar with our contribution process,
 
 <!-- Links -->
 
-[contributing]: https://github.com/srikanth235/privy/blob/master/CONTRIBUTING.md
-[good-first-issues]: https://github.com/srikanth235/privy/labels/good%20first%20issue
+[contributing]: https://github.com/srikanth235/kitty-the-coder/blob/master/CONTRIBUTING.md
+[good-first-issues]: https://github.com/srikanth235/kitty-the-coder/labels/good%20first%20issue
 
 ## :star: Star History
 
 <a href="https://star-history.com/#ise-uiuc/magicoder&Timeline">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=srikanth235/privy&type=Timeline&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=srikanth235/privy&type=Timeline" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=srikanth235/privy&type=Timeline" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=srikanth235/kitty-the-coder&type=Timeline&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=srikanth235/kitty-the-coder&type=Timeline" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=srikanth235/kitty-the-coder&type=Timeline" />
   </picture>
 </a>

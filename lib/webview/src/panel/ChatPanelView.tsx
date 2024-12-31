@@ -1,4 +1,4 @@
-import { webviewApi } from "@privy/common";
+import { webviewApi } from "@kitty-the-coder/common";
 import React from "react";
 import { CollapsedConversationView } from "../component/CollapsedConversationView";
 import { ExpandedConversationView } from "../component/ExpandedConversationView";
@@ -71,12 +71,16 @@ export const ChatPanelView: React.FC<{
                 data: { id: conversation.id },
               });
             }}
-            onClickInsertPrompt={panelState.surfacePromptForOpenAIPlus ? () => {
-              sendMessage({
-                type: "insertPromptIntoEditor",
-                data: { id: conversation.id },
-              })
-            } : undefined}
+            onClickInsertPrompt={
+              panelState.surfacePromptForOpenAIPlus
+                ? () => {
+                    sendMessage({
+                      type: "insertPromptIntoEditor",
+                      data: { id: conversation.id },
+                    });
+                  }
+                : undefined
+            }
           />
         ) : (
           <CollapsedConversationView

@@ -1,5 +1,5 @@
 {
-  "name": "@privy/common",
+  "name": "@kitty-the-coder/common",
   "version": "0.0.0",
   "private": true,
   "main": "build/index.js",

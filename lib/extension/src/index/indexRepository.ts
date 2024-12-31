@@ -111,10 +111,10 @@ export async function indexRepository({
 
   if (!cancelled) {
     // TODO potential bug on windows
-    const filename = `${repositoryPath}/.privy/embedding/repository.json`;
+    const filename = `${repositoryPath}/.kitty-the-coder/embedding/repository.json`;
 
     // TODO potential bug on windows
-    await fs.mkdir(`${repositoryPath}/.privy/embedding`, {
+    await fs.mkdir(`${repositoryPath}/.kitty-the-coder/embedding`, {
       recursive: true,
     });
 
@@ -157,7 +157,7 @@ function isSupportedFile(file: string) {
     !(
       file.endsWith(".min.js") ||
       file.endsWith(".min.css") ||
-      file.endsWith("pnpm-lock.yaml")
+      file.endsWith("bun.lockb")
     )
   );
 }

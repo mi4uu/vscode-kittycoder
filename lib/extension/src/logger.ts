@@ -6,7 +6,7 @@ type LogLevel = (typeof logLevels)[number];
 
 export function getVSCodeLogLevel(): LogLevel {
   const setting: string = vscode.workspace
-    .getConfiguration("privy.logger")
+    .getConfiguration("kitty-the-coder.logger")
     .get("level", "");
 
   return logLevels.find((l) => setting == l) ?? "info";

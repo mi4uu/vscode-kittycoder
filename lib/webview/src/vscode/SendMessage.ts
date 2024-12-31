@@ -1,5 +1,5 @@
 import { vscodeApi } from "./VsCodeApi";
-import { webviewApi } from "@privy/common";
+import { webviewApi } from "@kitty-the-coder/common";
 
 export type SendMessage = (message: webviewApi.OutgoingMessage) => void;
 

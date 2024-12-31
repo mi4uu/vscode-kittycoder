@@ -39,17 +39,17 @@ Privy for Visual Studio Code is written in [TypeScript](https://www.typescriptla
 
 The project is structured as follows:
 
-- [`app/vscode`](https://github.com/srikanth235/privy/tree/main/app/vscode): Extension assets (e.g. icons, `package.json`, `README.md`, walkthrough pages) and packaging scripts.
-- [`doc`](https://github.com/srikanth235/privy/tree/main/doc): documentation (e.g. architecture)
-- [`lib/common`](https://github.com/srikanth235/privy/tree/main/lib/common): API definitions for the message and state protocol between the extension and the webview. Also contains shared types and utilities.
-- [`lib/extension`](https://github.com/srikanth235/privy/tree/main/lib/extension): The main extension logic.
-- [`lib/webview`](https://github.com/srikanth235/privy/tree/main/lib/webview): The webview. It is written using [React](https://reactjs.org/).
-- [`template`](https://github.com/srikanth235/privy/tree/main/template): Privy Conversation Templates. Some are used in the extension, others are meant as examples for users.
+- [`app/vscode`](https://github.com/srikanth235/kitty-the-coder/tree/main/app/vscode): Extension assets (e.g. icons, `package.json`, `README.md`, walkthrough pages) and packaging scripts.
+- [`doc`](https://github.com/srikanth235/kitty-the-coder/tree/main/doc): documentation (e.g. architecture)
+- [`lib/common`](https://github.com/srikanth235/kitty-the-coder/tree/main/lib/common): API definitions for the message and state protocol between the extension and the webview. Also contains shared types and utilities.
+- [`lib/extension`](https://github.com/srikanth235/kitty-the-coder/tree/main/lib/extension): The main extension logic.
+- [`lib/webview`](https://github.com/srikanth235/kitty-the-coder/tree/main/lib/webview): The webview. It is written using [React](https://reactjs.org/).
+- [`template`](https://github.com/srikanth235/kitty-the-coder/tree/main/template): Privy Conversation Templates. Some are used in the extension, others are meant as examples for users.
 
 ## Extension Module: `lib/extension`
 
-The entrypoint for the extension is [`extension.ts`](https://github.com/srikanth235/privy/blob/main/lib/extension/src/extension.ts). It registers the commands and the webview panel. It also creates the chat model, panel and controller, which execute the main logic of the extension:
+The entrypoint for the extension is [`extension.ts`](https://github.com/srikanth235/kitty-the-coder/blob/main/lib/extension/src/extension.ts). It registers the commands and the webview panel. It also creates the chat model, panel and controller, which execute the main logic of the extension:
 
-- [`ChatModel.ts`](https://github.com/srikanth235/privy/blob/main/lib/extension/src/chat/ChatModel.ts): The chat model contains the different conversations and the currently active conversation.
-- [`ChatPanel.ts`](https://github.com/srikanth235/privy/blob/main/lib/extension/src/chat/ChatPanel.ts): The chat panel adds an abstraction layout over the webview panel o make it easier to use.
-- [`ChatController.ts`](https://github.com/srikanth235/privy/blob/main/lib/extension/src/chat/ChatController.ts): The chat controller handlers the different user actions, both from commands and from the webview. It executes logic, including chat creation, OpenAI API calls and updating the chat panel.
+- [`ChatModel.ts`](https://github.com/srikanth235/kitty-the-coder/blob/main/lib/extension/src/chat/ChatModel.ts): The chat model contains the different conversations and the currently active conversation.
+- [`ChatPanel.ts`](https://github.com/srikanth235/kitty-the-coder/blob/main/lib/extension/src/chat/ChatPanel.ts): The chat panel adds an abstraction layout over the webview panel o make it easier to use.
+- [`ChatController.ts`](https://github.com/srikanth235/kitty-the-coder/blob/main/lib/extension/src/chat/ChatController.ts): The chat controller handlers the different user actions, both from commands and from the webview. It executes logic, including chat creation, OpenAI API calls and updating the chat panel.

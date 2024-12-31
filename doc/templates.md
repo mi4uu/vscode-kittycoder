@@ -8,16 +8,16 @@ That's what you can get with Privy Templates! 🌈
 
 Here are some ideas of what you can do with them:
 
-- Have conversations in a different language, e.g., [in French](https://github.com/srikanth235/privy/blob/main/template/chat/chat-fr.rdt.md)
-- Let [Shakespeare write a sonnet about your code](https://github.com/srikanth235/privy/blob/main/template/fun/code-sonnet.rdt.md)
-- Define dedicated tasks, e.g., [improving code readability](https://github.com/srikanth235/privy/blob/main/template/task/improve-readability.rdt.md)
+- Have conversations in a different language, e.g., [in French](https://github.com/srikanth235/kitty-the-coder/blob/main/template/chat/chat-fr.rdt.md)
+- Let [Shakespeare write a sonnet about your code](https://github.com/srikanth235/kitty-the-coder/blob/main/template/fun/code-sonnet.rdt.md)
+- Define dedicated tasks, e.g., [improving code readability](https://github.com/srikanth235/kitty-the-coder/blob/main/template/task/improve-readability.rdt.md)
 - Create project, language, or framework-specific templates
 
 The best part is that you can share them with your colleagues, friends, or enemies.
 
 ## How to define your own templates?
 
-Add Template File (`.rdt.md`) files to the `.privy/template` folder in your workspace. See the [templates in the Privy repository for examples](https://github.com/srikanth235/privy/tree/main/template).
+Add Template File (`.rdt.md`) files to the `.kitty-the-coder/template` folder in your workspace. See the [templates in the Privy repository for examples](https://github.com/srikanth235/kitty-the-coder/tree/main/template).
 
 Run the "Privy: Start Custom Chat… 💬" command to use your custom conversations.
 
@@ -27,11 +27,11 @@ To help you debug, use the "Privy: Show logs" command to open the Output panel a
 
 ## Example: Drunken Pirate
 
-The ["Drunken Pirate" template](https://github.com/srikanth235/privy/blob/main/template/fun/drunken-pirate.rdt.md) will expose a new custom conversation: **Ask a drunken pirate to describe your code**.
+The ["Drunken Pirate" template](https://github.com/srikanth235/kitty-the-coder/blob/main/template/fun/drunken-pirate.rdt.md) will expose a new custom conversation: **Ask a drunken pirate to describe your code**.
 
 To see it in action:
 
-1. Save the template as `.privy/template/drunken-pirate.rdt.md` in your workspace
+1. Save the template as `.kitty-the-coder/template/drunken-pirate.rdt.md` in your workspace
 2. Use "Privy: Reload Templates"
 3. Use "Privy: Start Custom Chat… 💬"
 4. Pick "Ask a drunken pirate"
@@ -212,7 +212,7 @@ You pirate speak and refer to sailing and the sea where possible.
 
 ## Get started with Privy Templates
 
-The easiest way to get started with templates is to copy [some example templates](https://github.com/srikanth235/privy/tree/master/template) and start modifying them.
+The easiest way to get started with templates is to copy [some example templates](https://github.com/srikanth235/kitty-the-coder/tree/master/template) and start modifying them.
 
 Run the "Privy: Start Custom Chat… 💬" command to use your custom conversations.
 

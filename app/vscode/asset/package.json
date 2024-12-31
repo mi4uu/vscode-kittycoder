@@ -1,6 +1,6 @@
 {
   "publisher": "Privy",
-  "name": "privy-vscode",
+  "name": "kitty-the-coder-vscode",
   "version": "0.2.8",
   "displayName": "Privy - AI coding Autocomplete and chat that runs locally. ",
   "description": "Get code suggestions, chat with code, explain code, generate tests, find bugs, etc.",
@@ -38,9 +38,9 @@
     "node": ">=18",
     "vscode": "^1.72.0"
   },
-  "homepage": "https://github.com/srikanth235/privy",
-  "repository": "https://github.com/srikanth235/privy",
-  "bugs": "https://github.com/srikanth235/privy/issues",
+  "homepage": "https://github.com/srikanth235/kitty-the-coder",
+  "repository": "https://github.com/srikanth235/kitty-the-coder",
+  "bugs": "https://github.com/srikanth235/kitty-the-coder/issues",
   "extensionKind": [
     "workspace"
   ],
@@ -51,72 +51,72 @@
   "contributes": {
     "commands": [
       {
-        "command": "privy.startChat",
+        "command": "kitty-the-coder.startChat",
         "title": "Start Chat 💬",
         "category": "Privy",
         "icon": "$(comment-discussion)"
       },
       {
-        "command": "privy.explainCode",
+        "command": "kitty-the-coder.explainCode",
         "title": "Explain Code",
         "category": "Privy",
         "icon": "$(comment-discussion)"
       },
       {
-        "command": "privy.generateCode",
+        "command": "kitty-the-coder.generateCode",
         "title": "Generate Code 🪄",
         "category": "Privy",
         "icon": "$(wand)"
       },
       {
-        "command": "privy.generateUnitTest",
+        "command": "kitty-the-coder.generateUnitTest",
         "title": "Generate Unit Test 🪄",
         "category": "Privy",
         "icon": "$(beaker)"
       },
       {
-        "command": "privy.diagnoseErrors",
+        "command": "kitty-the-coder.diagnoseErrors",
         "title": "Diagnose Errors",
         "category": "Privy",
         "icon": "$(search-fuzzy)"
       },
       {
-        "command": "privy.findBugs",
+        "command": "kitty-the-coder.findBugs",
         "title": "Find Bugs",
         "category": "Privy",
         "icon": "$(bug)"
       },
       {
-        "command": "privy.touchBar.startChat",
+        "command": "kitty-the-coder.touchBar.startChat",
         "category": "Privy",
         "title": "💬"
       },
       {
-        "command": "privy.showChatPanel",
+        "command": "kitty-the-coder.showChatPanel",
         "title": "Show Chat Panel 💬",
         "category": "Privy",
         "icon": "$(comment-discussion)"
       },
       {
-        "command": "privy.getStarted",
+        "command": "kitty-the-coder.getStarted",
         "title": "Get Started",
         "category": "Privy",
         "icon": "$(question)"
       },
       {
-        "command": "privy.openSettings",
+        "command": "kitty-the-coder.openSettings",
         "title": "Open Settings",
         "category": "Privy",
         "icon": "$(settings)"
       },
       {
-        "command": "privy.reloadTemplates",
+        "command": "kitty-the-coder.reloadTemplates",
         "title": "Reload Templates",
         "category": "Privy",
         "icon": "$(sync)"
       },
       {
-        "command": "privy.showLogs",
+        "command": "kitty-the-coder.showLogs",
         "title": "Show Logs",
         "category": "Privy",
         "icon": "$(output)"
@@ -125,7 +125,7 @@
     "configuration": {
       "title": "Privy",
       "properties": {
-        "privy.logger.level": {
+        "kitty-the-coder.logger.level": {
           "type": "string",
           "default": "info",
           "enum": [
@@ -144,7 +144,7 @@
           "scope": "application",
           "order": 1
         },
-        "privy.provider": {
+        "kitty-the-coder.provider": {
           "type": "string",
           "default": "Ollama",
           "enum": [
@@ -159,14 +159,14 @@
           ],
           "order": 2
         },
-        "privy.providerBaseUrl": {
+        "kitty-the-coder.providerBaseUrl": {
           "type": "string",
           "default": "http://localhost:11434/",
           "markdownDescription": "Specify the URL to the provider.",
           "scope": "application",
           "order": 3
         },
-        "privy.autocomplete.mode": {
+        "kitty-the-coder.autocomplete.mode": {
           "type": "string",
           "default": "automatic",
           "enum": [
@@ -181,19 +181,19 @@
           ],
           "order": 4
         },
-        "privy.autocomplete.model": {
+        "kitty-the-coder.autocomplete.model": {
           "type": "string",
           "default": "deepseek-coder:1.3b-base",
           "markdownDescription": "Enter the name of Ollama model to use for autocomplete.",
           "order": 5
         },
-        "privy.autocomplete.debounceWait": {
+        "kitty-the-coder.autocomplete.debounceWait": {
           "type": "number",
           "default": 300,
           "markdownDescription": "The time gap before triggering the next completion in milliseconds",
           "order": 6
         },
-        "privy.model": {
+        "kitty-the-coder.model": {
           "type": "string",
           "default": "mistral:instruct",
           "enum": [
@@ -210,20 +210,20 @@
           "scope": "application",
           "order": 7
         },
-        "privy.customModel": {
+        "kitty-the-coder.customModel": {
           "type": "string",
           "default": "",
           "markdownDescription": "Enter the name of Ollama model to use. Only applies if you selected 'custom' above.",
           "order": 8
         },
-        "privy.syntaxHighlighting.useVisualStudioCodeColors": {
+        "kitty-the-coder.syntaxHighlighting.useVisualStudioCodeColors": {
           "type": "boolean",
           "default": false,
           "markdownDescription": "Use the Visual Studio Code Theme colors for syntax highlighting in the diff viewer. Might not work with all themes. Only applies to newly opened diffs.",
           "scope": "application",
           "order": 9
         },
-        "privy.indexRepository.enabled": {
+        "kitty-the-coder.indexRepository.enabled": {
           "type": "boolean",
           "default": false,
           "markdownDescription": "Enable the command to index your repository and give more context to the AI model. Experimental.",
@@ -236,30 +236,30 @@
       {
         "key": "cmd+\\",
         "command": "editor.action.inlineSuggest.trigger",
-        "when": "config.privy.autocomplete.mode === 'manual' && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible && isMac"
+        "when": "config.kitty-the-coder.autocomplete.mode === 'manual' && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible && isMac"
       },
       {
         "key": "alt+\\",
         "command": "editor.action.inlineSuggest.trigger",
-        "when": "config.privy.autocomplete.mode === 'manual' && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible && !isMac"
+        "when": "config.kitty-the-coder.autocomplete.mode === 'manual' && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible && !isMac"
       },
       {
-        "command": "privy.startChat",
+        "command": "kitty-the-coder.startChat",
         "when": "isMac",
         "key": "Ctrl+Cmd+c"
       },
       {
-        "command": "privy.startChat",
+        "command": "kitty-the-coder.startChat",
         "when": "!isMac",
         "key": "Ctrl+Alt+c"
       },
       {
-        "command": "privy.generateCode",
+        "command": "kitty-the-coder.generateCode",
         "when": "isMac",
         "key": "Ctrl+Cmd+g"
       },
       {
-        "command": "privy.generateCode",
+        "command": "kitty-the-coder.generateCode",
         "when": "!isMac",
         "key": "Ctrl+Alt+g"
       }
@@ -267,81 +267,81 @@
     "submenus": [
       {
         "label": "Privy",
-        "id": "privy.submenu"
+        "id": "kitty-the-coder.submenu"
       }
     ],
     "menus": {
       "view/title": [
         {
-          "command": "privy.startChat",
-          "when": "view == privy.chat",
+          "command": "kitty-the-coder.startChat",
+          "when": "view == kitty-the-coder.chat",
           "group": "navigation@1"
         },
         {
-          "command": "privy.openSettings",
-          "when": "view == privy.chat",
+          "command": "kitty-the-coder.openSettings",
+          "when": "view == kitty-the-coder.chat",
           "group": "navigation@2"
         },
         {
-          "command": "privy.getStarted",
-          "when": "view == privy.chat",
+          "command": "kitty-the-coder.getStarted",
+          "when": "view == kitty-the-coder.chat",
           "group": "navigation@3"
         }
       ],
       "touchBar": [
         {
-          "command": "privy.touchBar.startChat",
-          "group": "privy"
+          "command": "kitty-the-coder.touchBar.startChat",
+          "group": "kitty-the-coder"
         }
       ],
       "commandPalette": [
         {
-          "command": "privy.touchBar.startChat",
+          "command": "kitty-the-coder.touchBar.startChat",
           "when": "false"
         }
       ],
       "editor/context": [
         {
-          "submenu": "privy.submenu",
-          "group": "0_privy"
+          "submenu": "kitty-the-coder.submenu",
+          "group": "0_kitty-the-coder"
         }
       ],
-      "privy.submenu": [
+      "kitty-the-coder.submenu": [
         {
-          "command": "privy.startChat",
-          "group": "privy"
+          "command": "kitty-the-coder.startChat",
+          "group": "kitty-the-coder"
         },
         {
-          "command": "privy.explainCode",
-          "group": "privy"
+          "command": "kitty-the-coder.explainCode",
+          "group": "kitty-the-coder"
         },
         {
-          "command": "privy.findBugs",
-          "group": "privy"
+          "command": "kitty-the-coder.findBugs",
+          "group": "kitty-the-coder"
         },
         {
-          "command": "privy.generateUnitTest",
-          "group": "privy"
+          "command": "kitty-the-coder.generateUnitTest",
+          "group": "kitty-the-coder"
         },
         {
-          "command": "privy.diagnoseErrors",
-          "group": "privy"
+          "command": "kitty-the-coder.diagnoseErrors",
+          "group": "kitty-the-coder"
         }
       ]
     },
     "viewsContainers": {
       "activitybar": [
         {
-          "id": "privy",
+          "id": "kitty-the-coder",
           "title": "Privy",
           "icon": "media/sidebar-icon.svg"
         }
       ]
     },
     "views": {
-      "privy": [
+      "kitty-the-coder": [
         {
-          "id": "privy.chat",
+          "id": "kitty-the-coder.chat",
           "name": "Chat",
           "type": "webview"
         }
@@ -349,7 +349,7 @@
     },
     "walkthroughs": [
       {
-        "id": "privy",
+        "id": "kitty-the-coder",
         "title": "Privy",
         "description": "Your AI Chat Assistant in Visual Studio Code",
         "steps": [

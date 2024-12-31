@@ -1,5 +1,5 @@
 {
-  "name": "@privy/extension",
+  "name": "@kitty-the-coder/extension",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -12,7 +12,7 @@
     "@types/vscode": "1.72.0"
   },
   "dependencies": {
-    "@privy/common": "*",
+    "@kitty-the-coder/common": "*",
     "handlebars": "4.7.8",
     "marked": "4.2.12",
     "modelfusion": "0.122.0",

@@ -1,0 +1,676 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.3.0",
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "pluginsConfig": {
+    "@nx/js": {
+      "analyzeSourceFiles": false
+    }
+  },
+  "fileMap": {
+    "nonProjectFiles": [],
+    "projectFileMap": {
+      "@kitty-the-coder/extension": [
+        {
+          "file": "lib/extension/.gitignore",
+          "hash": "7873092729447533672"
+        },
+        {
+          "file": "lib/extension/package.json",
+          "hash": "17945084827399067242",
+          "deps": [
+            "npm:@types/handlebars",
+            "npm:@types/marked",
+            "npm:@types/vscode",
+            "@kitty-the-coder/common",
+            "npm:handlebars",
+            "npm:marked",
+            "npm:modelfusion",
+            "npm:secure-json-parse",
+            "npm:simple-git",
+            "npm:zod@3.22.4"
+          ]
+        },
+        {
+          "file": "lib/extension/project.json",
+          "hash": "4430889715372918451"
+        },
+        {
+          "file": "lib/extension/src/ai/AIClient.ts",
+          "hash": "16425122155963565264"
+        },
+        {
+          "file": "lib/extension/src/ai/ApiKeyManager.ts",
+          "hash": "2242049292311731049"
+        },
+        {
+          "file": "lib/extension/src/autocomplete/AutoCompleteProvider.ts",
+          "hash": "10091089406912651314"
+        },
+        {
+          "file": "lib/extension/src/autocomplete/AutoCompleteTemplateProvider.ts",
+          "hash": "11182122400304327720"
+        },
+        {
+          "file": "lib/extension/src/autocomplete/languages.ts",
+          "hash": "6798927581718494069"
+        },
+        {
+          "file": "lib/extension/src/chat/ChatController.ts",
+          "hash": "15512256517514306387"
+        },
+        {
+          "file": "lib/extension/src/chat/ChatModel.ts",
+          "hash": "9626683365677791944"
+        },
+        {
+          "file": "lib/extension/src/chat/ChatPanel.ts",
+          "hash": "4834264167285379636"
+        },
+        {
+          "file": "lib/extension/src/conversation/Conversation.ts",
+          "hash": "3470123744963084279"
+        },
+        {
+          "file": "lib/extension/src/conversation/ConversationType.ts",
+          "hash": "14642295403116777590"
+        },
+        {
+          "file": "lib/extension/src/conversation/ConversationTypesProvider.ts",
+          "hash": "983885592062471504"
+        },
+        {
+          "file": "lib/extension/src/conversation/DiffData.ts",
+          "hash": "2721792489802426935"
+        },
+        {
+          "file": "lib/extension/src/conversation/Message.ts",
+          "hash": "3697724275538762140"
+        },
+        {
+          "file": "lib/extension/src/conversation/input/getFilename.ts",
+          "hash": "11700038460930046557"
+        },
+        {
+          "file": "lib/extension/src/conversation/input/getLanguage.ts",
+          "hash": "13306131746913129747"
+        },
+        {
+          "file": "lib/extension/src/conversation/input/getOpenFiles.ts",
+          "hash": "12139978468988831858"
+        },
+        {
+          "file": "lib/extension/src/conversation/input/getSelectedLocationText.ts",
+          "hash": "7199630631513888862"
+        },
+        {
+          "file": "lib/extension/src/conversation/input/getSelectedRange.ts",
+          "hash": "16797329823242715294"
+        },
+        {
+          "file": "lib/extension/src/conversation/input/getSelectedText.ts",
+          "hash": "10527328751228588502"
+        },
+        {
+          "file": "lib/extension/src/conversation/input/getSelectionWithDiagnostics.ts",
+          "hash": "3566388047582745719"
+        },
+        {
+          "file": "lib/extension/src/conversation/input/resolveVariable.ts",
+          "hash": "16033326807420497368"
+        },
+        {
+          "file": "lib/extension/src/conversation/input/resolveVariables.ts",
+          "hash": "12139150993270724398"
+        },
+        {
+          "file": "lib/extension/src/conversation/input/validateVariable.ts",
+          "hash": "1364930833966425908"
+        },
+        {
+          "file": "lib/extension/src/conversation/retrieval-augmentation/EmbeddingFile.ts",
+          "hash": "6286249936888339214"
+        },
+        {
+          "file": "lib/extension/src/conversation/retrieval-augmentation/cosineSimilarity.ts",
+          "hash": "15687474324262249000"
+        },
+        {
+          "file": "lib/extension/src/conversation/retrieval-augmentation/executeRetrievalAugmentation.ts",
+          "hash": "2908755436799141855"
+        },
+        {
+          "file": "lib/extension/src/conversation/template/RubberduckTemplate.ts",
+          "hash": "3939851170573875256"
+        },
+        {
+          "file": "lib/extension/src/conversation/template/RubberduckTemplateLoadResult.ts",
+          "hash": "12193850994306261577"
+        },
+        {
+          "file": "lib/extension/src/conversation/template/loadRubberduckTemplateFromFile.ts",
+          "hash": "8201855437417570284"
+        },
+        {
+          "file": "lib/extension/src/conversation/template/loadRubberduckTemplatesFromWorkspace.ts",
+          "hash": "10366532671464154193"
+        },
+        {
+          "file": "lib/extension/src/conversation/template/parseRubberduckTemplate.ts",
+          "hash": "6484896384833378525"
+        },
+        {
+          "file": "lib/extension/src/diff/DiffEditor.ts",
+          "hash": "2567589802270461132"
+        },
+        {
+          "file": "lib/extension/src/diff/DiffEditorManager.ts",
+          "hash": "1855643575355951563"
+        },
+        {
+          "file": "lib/extension/src/extension.ts",
+          "hash": "7328090023554867567"
+        },
+        {
+          "file": "lib/extension/src/index/chunk/Chunk.ts",
+          "hash": "5634887706493494476"
+        },
+        {
+          "file": "lib/extension/src/index/chunk/calculateLinePositions.ts",
+          "hash": "8621167809580222676"
+        },
+        {
+          "file": "lib/extension/src/index/chunk/splitLinearLines.ts",
+          "hash": "18287200296484094141"
+        },
+        {
+          "file": "lib/extension/src/index/indexRepository.ts",
+          "hash": "9652515230990108906"
+        },
+        {
+          "file": "lib/extension/src/logger.ts",
+          "hash": "117318131784890770"
+        },
+        {
+          "file": "lib/extension/src/vscode/getActiveEditor.ts",
+          "hash": "5951128398749186253"
+        },
+        {
+          "file": "lib/extension/src/vscode/readFileContent.ts",
+          "hash": "8841037036852989406"
+        },
+        {
+          "file": "lib/extension/src/webview/WebviewContainer.ts",
+          "hash": "12306788389669212504"
+        },
+        {
+          "file": "lib/extension/src/webview/generateNonce.ts",
+          "hash": "1062397212840429262"
+        },
+        {
+          "file": "lib/extension/tsconfig.json",
+          "hash": "4766645667555341972"
+        }
+      ],
+      "@kitty-the-coder/webview": [
+        {
+          "file": "lib/webview/.eslintrc.json",
+          "hash": "9848364852330215018"
+        },
+        {
+          "file": "lib/webview/.gitignore",
+          "hash": "7873092729447533672"
+        },
+        {
+          "file": "lib/webview/asset/base.css",
+          "hash": "1858512069749362099"
+        },
+        {
+          "file": "lib/webview/asset/chat.css",
+          "hash": "11011483739238577696"
+        },
+        {
+          "file": "lib/webview/asset/codicon.ttf",
+          "hash": "9146537099833156017"
+        },
+        {
+          "file": "lib/webview/asset/codicons.css",
+          "hash": "15893525751447648655"
+        },
+        {
+          "file": "lib/webview/asset/diff-hardcoded-colors.css",
+          "hash": "5211620908355069028"
+        },
+        {
+          "file": "lib/webview/asset/diff-vscode-colors.css",
+          "hash": "169368047840768315"
+        },
+        {
+          "file": "lib/webview/asset/prism.js",
+          "hash": "2172335077038486616"
+        },
+        {
+          "file": "lib/webview/package.json",
+          "hash": "7621314784035992514",
+          "deps": [
+            "npm:@types/prismjs",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@types/vscode-webview",
+            "npm:eslint",
+            "npm:eslint-plugin-react",
+            "@kitty-the-coder/common",
+            "npm:prismjs",
+            "npm:react",
+            "npm:react-copy-to-clipboard",
+            "npm:react-diff-viewer-continued",
+            "npm:react-dom",
+            "npm:react-markdown",
+            "npm:react-syntax-highlighter"
+          ]
+        },
+        {
+          "file": "lib/webview/project.json",
+          "hash": "5684454969334989398"
+        },
+        {
+          "file": "lib/webview/src/component/ChatInput.tsx",
+          "hash": "10536097395327683479"
+        },
+        {
+          "file": "lib/webview/src/component/CodeBlock.tsx",
+          "hash": "11083689400569774881"
+        },
+        {
+          "file": "lib/webview/src/component/CollapsedConversationView.tsx",
+          "hash": "140224811373263953"
+        },
+        {
+          "file": "lib/webview/src/component/ConversationHeader.tsx",
+          "hash": "3703658808892814137"
+        },
+        {
+          "file": "lib/webview/src/component/DiffView.tsx",
+          "hash": "3996768345863241430"
+        },
+        {
+          "file": "lib/webview/src/component/ErrorMessage.tsx",
+          "hash": "18104563883955847387"
+        },
+        {
+          "file": "lib/webview/src/component/ExpandedConversationView.tsx",
+          "hash": "7071603223393760192"
+        },
+        {
+          "file": "lib/webview/src/component/InstructionRefinementView.tsx",
+          "hash": "1394926839020064528"
+        },
+        {
+          "file": "lib/webview/src/component/MessageExchangeView.tsx",
+          "hash": "15179462219812082552"
+        },
+        {
+          "file": "lib/webview/src/panel/ChatPanelView.tsx",
+          "hash": "2123689692814462545"
+        },
+        {
+          "file": "lib/webview/src/panel/DiffPanelView.tsx",
+          "hash": "2192105403694164928"
+        },
+        {
+          "file": "lib/webview/src/vscode/SendMessage.ts",
+          "hash": "7836770909085040829"
+        },
+        {
+          "file": "lib/webview/src/vscode/StateManager.ts",
+          "hash": "6802654226310365600"
+        },
+        {
+          "file": "lib/webview/src/vscode/VsCodeApi.ts",
+          "hash": "394182258647240624"
+        },
+        {
+          "file": "lib/webview/src/webview.tsx",
+          "hash": "8628716062069072089"
+        },
+        {
+          "file": "lib/webview/tsconfig.json",
+          "hash": "17549329113289533509"
+        }
+      ],
+      "@kitty-the-coder/common": [
+        {
+          "file": "lib/common/.gitignore",
+          "hash": "7873092729447533672"
+        },
+        {
+          "file": "lib/common/package.json",
+          "hash": "15741745589689811934",
+          "deps": ["npm:zod"]
+        },
+        {
+          "file": "lib/common/project.json",
+          "hash": "13135102595819082524"
+        },
+        {
+          "file": "lib/common/src/index.ts",
+          "hash": "15189207527601690992"
+        },
+        {
+          "file": "lib/common/src/util/index.ts",
+          "hash": "1551941614503214513"
+        },
+        {
+          "file": "lib/common/src/util/nextId.ts",
+          "hash": "16031390135458632492"
+        },
+        {
+          "file": "lib/common/src/webview-api/ConversationSchema.ts",
+          "hash": "2113278399606531136"
+        },
+        {
+          "file": "lib/common/src/webview-api/ErrorSchema.ts",
+          "hash": "17096536748030652612"
+        },
+        {
+          "file": "lib/common/src/webview-api/IncomingMessage.ts",
+          "hash": "3597646339120281511"
+        },
+        {
+          "file": "lib/common/src/webview-api/OutgoingMessage.ts",
+          "hash": "9056651760512416390"
+        },
+        {
+          "file": "lib/common/src/webview-api/PanelState.ts",
+          "hash": "15064077850234848111"
+        },
+        {
+          "file": "lib/common/src/webview-api/index.ts",
+          "hash": "3951339626357785955"
+        },
+        {
+          "file": "lib/common/tsconfig.json",
+          "hash": "10104642310464951720"
+        }
+      ],
+      "@kitty-the-coder/vscode-kitty-the-coder": [
+        {
+          "file": ".eslintignore",
+          "hash": "807599155907237367"
+        },
+        {
+          "file": ".eslintrc.json",
+          "hash": "11575787274843112918"
+        },
+        {
+          "file": ".github/ISSUE_TEMPLATE/bug_report.md",
+          "hash": "17799471468072210923"
+        },
+        {
+          "file": ".github/ISSUE_TEMPLATE/feature_request.md",
+          "hash": "5680797376108200667"
+        },
+        {
+          "file": ".github/ISSUE_TEMPLATE/support.md",
+          "hash": "12451014141806868119"
+        },
+        {
+          "file": ".github/workflows/ovsx-deploy.yml",
+          "hash": "13248841700157889181"
+        },
+        {
+          "file": ".github/workflows/vscode-deploy.yml",
+          "hash": "498205878824038023"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "16826488088746678130"
+        },
+        {
+          "file": ".husky/pre-commit",
+          "hash": "10199889998959119302"
+        },
+        {
+          "file": ".vscode/extensions.json",
+          "hash": "392135118681590484"
+        },
+        {
+          "file": ".vscode/launch.json",
+          "hash": "4144265244587069375"
+        },
+        {
+          "file": ".vscode/settings.json",
+          "hash": "6205145935212284538"
+        },
+        {
+          "file": ".vscode/tasks.json",
+          "hash": "16658670030152364684"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "hash": "3398106394241529017"
+        },
+        {
+          "file": "CONTRIBUTING.md",
+          "hash": "3724239240250881681"
+        },
+        {
+          "file": "LICENSE",
+          "hash": "16595202880134335679"
+        },
+        {
+          "file": "README.md",
+          "hash": "14508864146292534431"
+        },
+        {
+          "file": "bun.lockb",
+          "hash": "11737296387632924176"
+        },
+        {
+          "file": "doc/architecture.md",
+          "hash": "367454253292447399"
+        },
+        {
+          "file": "doc/templates.md",
+          "hash": "7394331947771102834"
+        },
+        {
+          "file": "lint-staged.config.js",
+          "hash": "11967539353322749354"
+        },
+        {
+          "file": "nx.json",
+          "hash": "9140308105356061031"
+        },
+        {
+          "file": "package.json",
+          "hash": "17325954303121869230",
+          "deps": [
+            "npm:@biomejs/biome",
+            "npm:@types/bun",
+            "npm:@types/node",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:@vscode/vsce",
+            "npm:bun",
+            "npm:esbuild",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:husky",
+            "npm:lint-staged",
+            "npm:nx",
+            "npm:ovsx",
+            "npm:prettier",
+            "npm:typescript",
+            "npm:vitest",
+            "npm:modelfusion"
+          ]
+        },
+        {
+          "file": "project.json",
+          "hash": "1024673345602241127"
+        },
+        {
+          "file": "template/chat/chat-de.rdt.md",
+          "hash": "4415110733692822614"
+        },
+        {
+          "file": "template/chat/chat-en.rdt.md",
+          "hash": "12566130061616099911"
+        },
+        {
+          "file": "template/chat/chat-fr.rdt.md",
+          "hash": "9886259846723577363"
+        },
+        {
+          "file": "template/experimental/find-code.rdt.md",
+          "hash": "18127395523375965248"
+        },
+        {
+          "file": "template/fun/code-sonnet.rdt.md",
+          "hash": "13720303555202644756"
+        },
+        {
+          "file": "template/fun/drunken-pirate.rdt.md",
+          "hash": "436678169571073009"
+        },
+        {
+          "file": "template/task/diagnose-errors.rdt.md",
+          "hash": "7531270497971073574"
+        },
+        {
+          "file": "template/task/document-code.rdt.md",
+          "hash": "512060844542666325"
+        },
+        {
+          "file": "template/task/edit-code.rdt.md",
+          "hash": "6531562616996220004"
+        },
+        {
+          "file": "template/task/explain-code-w-context.rdt.md",
+          "hash": "3669333314308571912"
+        },
+        {
+          "file": "template/task/explain-code.rdt.md",
+          "hash": "12525681741816878384"
+        },
+        {
+          "file": "template/task/find-bugs.rdt.md",
+          "hash": "12585385746404913516"
+        },
+        {
+          "file": "template/task/generate-code.rdt.md",
+          "hash": "5701074624317301665"
+        },
+        {
+          "file": "template/task/generate-unit-test.rdt.md",
+          "hash": "1960781020858212454"
+        },
+        {
+          "file": "template/task/improve-readability.rdt.md",
+          "hash": "16763671591032930647"
+        }
+      ],
+      "@kitty-the-coder/vscode": [
+        {
+          "file": "app/vscode/.gitignore",
+          "hash": "12693843708987936619"
+        },
+        {
+          "file": "app/vscode/asset/LICENSE.txt",
+          "hash": "16595202880134335679"
+        },
+        {
+          "file": "app/vscode/asset/README.md",
+          "hash": "14508864146292534431"
+        },
+        {
+          "file": "app/vscode/asset/media/autocompletion.gif",
+          "hash": "7734018021296887390"
+        },
+        {
+          "file": "app/vscode/asset/media/chat.gif",
+          "hash": "6029307376591299496"
+        },
+        {
+          "file": "app/vscode/asset/media/extension-icon.png",
+          "hash": "18204859942825228079"
+        },
+        {
+          "file": "app/vscode/asset/media/sidebar-icon.svg",
+          "hash": "10552754439011694228"
+        },
+        {
+          "file": "app/vscode/asset/package.json",
+          "hash": "5662937557381241296"
+        },
+        {
+          "file": "app/vscode/asset/walkthrough/autocomplete.md",
+          "hash": "853319074135260775"
+        },
+        {
+          "file": "app/vscode/asset/walkthrough/chat.md",
+          "hash": "12349469715926175159"
+        },
+        {
+          "file": "app/vscode/asset/walkthrough/diagnose-errors.md",
+          "hash": "265656730865251620"
+        },
+        {
+          "file": "app/vscode/asset/walkthrough/edit-code.md",
+          "hash": "5330075954978648214"
+        },
+        {
+          "file": "app/vscode/asset/walkthrough/explain-code.md",
+          "hash": "16999993958428650178"
+        },
+        {
+          "file": "app/vscode/asset/walkthrough/find-bugs.md",
+          "hash": "7515351062593398940"
+        },
+        {
+          "file": "app/vscode/asset/walkthrough/generate-code.md",
+          "hash": "13220764375271766899"
+        },
+        {
+          "file": "app/vscode/asset/walkthrough/generate-unit-test.md",
+          "hash": "5311146643479408358"
+        },
+        {
+          "file": "app/vscode/asset/walkthrough/other-actions.md",
+          "hash": "17770844996838590293"
+        },
+        {
+          "file": "app/vscode/asset/walkthrough/project.md",
+          "hash": "14660731599524639574"
+        },
+        {
+          "file": "app/vscode/asset/walkthrough/setup.md",
+          "hash": "6834931406200597624"
+        },
+        {
+          "file": "app/vscode/asset/walkthrough/tips-and-tricks.md",
+          "hash": "4677385608414627584"
+        },
+        {
+          "file": "app/vscode/bin/package.sh",
+          "hash": "17658842730034966502"
+        },
+        {
+          "file": "app/vscode/dev/package.json",
+          "hash": "5662937557381241296"
+        },
+        {
+          "file": "app/vscode/package.json",
+          "hash": "940727576896082499",
+          "deps": ["@kitty-the-coder/extension", "@kitty-the-coder/webview"]
+        },
+        {
+          "file": "app/vscode/project.json",
+          "hash": "6557199261648911643"
+        }
+      ]
+    }
+  }
+}

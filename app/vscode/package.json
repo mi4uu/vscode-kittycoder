@@ -1,11 +1,11 @@
 {
-  "name": "@privy/vscode",
+  "name": "@kitty-the-coder/vscode",
   "version": "0.0.0",
   "private": true,
   "scripts": {},
   "devDependencies": {},
   "dependencies": {
-    "@privy/extension": "*",
-    "@privy/webview": "*"
+    "@kitty-the-coder/extension": "*",
+    "@kitty-the-coder/webview": "*"
   }
 }

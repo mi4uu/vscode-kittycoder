@@ -14,8 +14,8 @@ First of all, thank you for taking some of your time to contribute to the projec
 
 > Pre-requisite: you have installed [git][install-git], [node][install-node] and [pnpm][install-pnpm].
 
-1. Clone the repo: `git clone git@github.com:srikanth235/privy.git`
-1. Go into the cloned repository: `cd privy`
+1. Clone the repo: `git clone git@github.com:srikanth235/kitty-the-coder.git`
+1. Go into the cloned repository: `cd kitty-the-coder`
 1. Install dependencies: `pnpm install`
 1. Build the extension: `pnpm build-all`
 
@@ -82,5 +82,5 @@ Whether it's code, design, typo or documentation, every contribution is welcomed
 [openai-docs]: https://platform.openai.com/docs/introduction
 [vscode-debug-extension]: https://code.visualstudio.com/api/get-started/your-first-extension#debugging-the-extension
 [all-contributors-bot-command]: https://allcontributors.org/docs/en/bot/usage#all-contributors-add
-[architecture-doc]: https://github.com/srikanth235/privy/blob/main/doc/architecture.md
-[template-doc]: https://github.com/srikanth235/privy/blob/main/doc/privy-templates.md
+[architecture-doc]: https://github.com/srikanth235/kitty-the-coder/blob/main/doc/architecture.md
+[template-doc]: https://github.com/srikanth235/kitty-the-coder/blob/main/doc/kitty-the-coder-templates.md

@@ -1,4 +1,4 @@
-import { webviewApi } from "@privy/common";
+import { webviewApi } from "@kitty-the-coder/common";
 import * as vscode from "vscode";
 import { ApiKeyManager } from "../ai/ApiKeyManager";
 import { WebviewContainer } from "../webview/WebviewContainer";
@@ -10,7 +10,7 @@ function getConfigSurfacePromptForOpenAIPlus(): boolean {
 }
 
 export class ChatPanel implements vscode.WebviewViewProvider {
-  public static readonly id = "privy.chat";
+  public static readonly id = "kitty-the-coder.chat";
 
   private readonly disposables: vscode.Disposable[] = [];
 

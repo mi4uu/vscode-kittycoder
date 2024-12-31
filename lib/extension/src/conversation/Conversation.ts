@@ -1,4 +1,4 @@
-import { webviewApi } from "@privy/common";
+import { webviewApi } from "@kitty-the-coder/common";
 import Handlebars from "handlebars";
 import * as vscode from "vscode";
 import { AIClient } from "../ai/AIClient";
@@ -434,7 +434,7 @@ export class Conversation {
       const tab = allTabs.find((tab) => {
         return (
           (tab.input as any).viewType ===
-          `mainThreadWebview-privy.diff.${this.id}`
+          `mainThreadWebview-kitty-the-coder.diff.${this.id}`
         );
       });
 

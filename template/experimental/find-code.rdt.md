@@ -33,7 +33,7 @@
       "variableName": "searchResults",
       "query": "{{lastMessage}}",
       "source": "embedding-file",
-      "file": "privy-repository.json",
+      "file": "kitty-the-coder-repository.json",
       "threshold": 0.7,
       "maxResults": 5
     },

@@ -10,7 +10,8 @@
     "sourceMap": true,
     "moduleResolution": "node",
     "rootDir": "./src",
-    "outDir": "./build"
+    "outDir": "./build",
+    "skipLibCheck": true
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"]
 }

@@ -6,7 +6,10 @@
       "type": "extensionHost",
       "request": "launch",
       "runtimeExecutable": "${execPath}",
-      "args": ["--extensionDevelopmentPath=${workspaceFolder}/app/vscode/dev"],
+      "args": [
+        "--disable-extensions",
+        "--extensionDevelopmentPath=${workspaceFolder}/app/vscode/dev"
+      ],
       "outFiles": ["${workspaceFolder}/app/vscode/dev/extension/dist/**/*.js"],
       "preLaunchTask": "build-extension"
     }

@@ -19,13 +19,13 @@ export class DiffEditor {
     conversationId: string;
   }) {
     const panel = vscode.window.createWebviewPanel(
-      `privy.diff.${conversationId}`,
+      `kitty-the-coder.diff.${conversationId}`,
       title,
       editorColumn
     );
 
     const useVisualStudioCodeColors: boolean = vscode.workspace
-      .getConfiguration("privy.syntaxHighlighting")
+      .getConfiguration("kitty-the-coder.syntaxHighlighting")
       .get("useVisualStudioCodeColors", false);
 
     this.container = new WebviewContainer({

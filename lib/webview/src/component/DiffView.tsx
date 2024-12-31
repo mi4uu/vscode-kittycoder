@@ -1,6 +1,7 @@
 import React from "react";
 import DiffViewer, { DiffMethod } from "react-diff-viewer-continued";
 import { sendMessage } from "../vscode/SendMessage";
+import Prism from "prismjs";
 
 // @ts-expect-error Somehow the component can only be accessed from .default
 const ReactDiffViewer = DiffViewer.default;
@@ -390,7 +391,7 @@ function toPrismHighlightOptions(
         type: "reportError",
         error: {
           title: `Unable to highlight syntax for language ${languageId}`,
-          message: `We could not find a matching Prism grammar for language ${languageId}. We used the default one (${DEFAULT_PRISM_OPTIONS.language}). Please [open an issue](https://github.com/srikanth235/privy/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=Add%20syntax%20highlight%20for%20language%20%22${languageId}%22) to ask for supporting this language.`,
+          message: `We could not find a matching Prism grammar for language ${languageId}. We used the default one (${DEFAULT_PRISM_OPTIONS.language}). Please [open an issue](https://github.com/srikanth235/kitty-the-coder/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=Add%20syntax%20highlight%20for%20language%20%22${languageId}%22) to ask for supporting this language.`,
           level: "warning",
           disableRetry: true,
         },

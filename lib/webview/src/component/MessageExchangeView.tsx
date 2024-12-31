@@ -1,16 +1,15 @@
-import { webviewApi } from "@privy/common";
+import { webviewApi } from "@kitty-the-coder/common";
 import React, { useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { ChatInput } from "./ChatInput";
 import { ErrorMessage } from "./ErrorMessage";
 // @ts-ignore
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 // @ts-ignore
-import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism'
+import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import CodeBlock from "./CodeBlock";
 
-
-export function MessageExchangeView ({
+export function MessageExchangeView({
   content,
   onClickDismissError,
   onClickRetry,
@@ -29,14 +28,16 @@ export function MessageExchangeView ({
         <div className={`message ${message.author}`} key={i}>
           {message.author === "user" && message.content}
           {message.author === "bot" && (
-            <ReactMarkdown children={message.content} components={{code: CodeBlock}}></ReactMarkdown>
+            <ReactMarkdown
+              children={message.content}
+              components={{ code: CodeBlock }}
+            ></ReactMarkdown>
           )}
         </div>
       ))}
       {(() => {
         const type = content.state.type;
-        switch (type)
-        {
+        switch (type) {
           case "waitingForBotAnswer":
             return (
               <div className="message bot">
@@ -47,9 +48,10 @@ export function MessageExchangeView ({
           case "botAnswerStreaming":
             return (
               <div className="message bot">
-                <ReactMarkdown children={content.state.partialAnswer ?? ""}
+                <ReactMarkdown
+                  children={content.state.partialAnswer ?? ""}
                   components={{
-                    code: CodeBlock
+                    code: CodeBlock,
                   }}
                 ></ReactMarkdown>
                 <span className={"in-progress"} />

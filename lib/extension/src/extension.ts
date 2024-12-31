@@ -23,7 +23,7 @@ export const activate = async (context: vscode.ExtensionContext) => {
     level: getVSCodeLogLevel(),
   });
   vscode.workspace.onDidChangeConfiguration((event) => {
-    if (event.affectsConfiguration("privy.logger.level")) {
+    if (event.affectsConfiguration("kitty-the-coder.logger.level")) {
       vscodeLogger.setLevel(getVSCodeLogLevel());
     }
   });
@@ -68,88 +68,107 @@ export const activate = async (context: vscode.ExtensionContext) => {
   );
 
   context.subscriptions.push(
-    vscode.window.registerWebviewViewProvider("privy.chat", chatPanel),
-
-    vscode.commands.registerCommand("privy.startConversation", (templateId) =>
-      chatController.createConversation(templateId)
+    vscode.window.registerWebviewViewProvider(
+      "kitty-the-coder.chat",
+      chatPanel
     ),
 
-    vscode.commands.registerCommand("privy.diagnoseErrors", () => {
+    vscode.commands.registerCommand(
+      "kitty-the-coder.startConversation",
+      (templateId) => chatController.createConversation(templateId)
+    ),
+
+    vscode.commands.registerCommand("kitty-the-coder.diagnoseErrors", () => {
       chatController.createConversation("diagnose-errors");
     }),
-    vscode.commands.registerCommand("privy.explainCode", () => {
+    vscode.commands.registerCommand("kitty-the-coder.explainCode", () => {
       chatController.createConversation("explain-code");
     }),
-    vscode.commands.registerCommand("privy.findBugs", () => {
+    vscode.commands.registerCommand("kitty-the-coder.findBugs", () => {
       chatController.createConversation("find-bugs");
     }),
-    vscode.commands.registerCommand("privy.generateCode", () => {
+    vscode.commands.registerCommand("kitty-the-coder.generateCode", () => {
       chatController.createConversation("generate-code");
     }),
-    vscode.commands.registerCommand("privy.generateUnitTest", () => {
+    vscode.commands.registerCommand("kitty-the-coder.generateUnitTest", () => {
       chatController.createConversation("generate-unit-test");
     }),
-    vscode.commands.registerCommand("privy.startChat", () => {
+    vscode.commands.registerCommand("kitty-the-coder.startChat", () => {
       chatController.createConversation("chat-en");
     }),
-    vscode.commands.registerCommand("privy.editCode", () => {
+    vscode.commands.registerCommand("kitty-the-coder.editCode", () => {
       chatController.createConversation("edit-code");
     }),
-    vscode.commands.registerCommand("privy.startCustomChat", async () => {
-      const items = conversationTypesProvider
-        .getConversationTypes()
-        .map((conversationType) => ({
-          id: conversationType.id,
-          label: conversationType.label,
-          description: (() => {
-            const tags = conversationType.tags;
-            return tags == null
-              ? conversationType.source
-              : `${conversationType.source}, ${tags.join(", ")}`;
-          })(),
-          detail: conversationType.description,
-        }));
+    vscode.commands.registerCommand(
+      "kitty-the-coder.startCustomChat",
+      async () => {
+        const items = conversationTypesProvider
+          .getConversationTypes()
+          .map((conversationType) => ({
+            id: conversationType.id,
+            label: conversationType.label,
+            description: (() => {
+              const tags = conversationType.tags;
+              return tags == null
+                ? conversationType.source
+                : `${conversationType.source}, ${tags.join(", ")}`;
+            })(),
+            detail: conversationType.description,
+          }));
 
-      const result = await vscode.window.showQuickPick(items, {
-        title: `Start Custom Chat…`,
-        matchOnDescription: true,
-        matchOnDetail: true,
-        placeHolder: "Select conversation type…",
-      });
+        const result = await vscode.window.showQuickPick(items, {
+          title: `Start Custom Chat…`,
+          matchOnDescription: true,
+          matchOnDetail: true,
+          placeHolder: "Select conversation type…",
+        });
 
-      if (result == undefined) {
-        return; // user cancelled
+        if (result == undefined) {
+          return; // user cancelled
+        }
+
+        await chatController.createConversation(result.id);
       }
-
-      await chatController.createConversation(result.id);
-    }),
-    vscode.commands.registerCommand("privy.touchBar.startChat", () => {
-      chatController.createConversation("chat-en");
-    }),
-    vscode.commands.registerCommand("privy.showChatPanel", async () => {
-      await chatController.showChatPanel();
-    }),
-    vscode.commands.registerCommand("privy.getStarted", async () => {
+    ),
+    vscode.commands.registerCommand(
+      "kitty-the-coder.touchBar.startChat",
+      () => {
+        chatController.createConversation("chat-en");
+      }
+    ),
+    vscode.commands.registerCommand(
+      "kitty-the-coder.showChatPanel",
+      async () => {
+        await chatController.showChatPanel();
+      }
+    ),
+    vscode.commands.registerCommand("kitty-the-coder.getStarted", async () => {
       await vscode.commands.executeCommand("workbench.action.openWalkthrough", {
-        category: `Privy.privy-vscode#privy`,
+        category: `Privy.kitty-the-coder-vscode#kitty-the-coder`,
       });
     }),
-    vscode.commands.registerCommand("privy.openSettings", async () => {
-      await vscode.commands.executeCommand(
-        "workbench.action.openSettings",
-        `@ext:privy.privy-vscode`
-      );
-    }),
-    vscode.commands.registerCommand("privy.reloadTemplates", async () => {
-      await conversationTypesProvider.loadConversationTypes();
-      vscode.window.showInformationMessage("Privy templates reloaded.");
-    }),
+    vscode.commands.registerCommand(
+      "kitty-the-coder.openSettings",
+      async () => {
+        await vscode.commands.executeCommand(
+          "workbench.action.openSettings",
+          `@ext:kitty-the-coder.kitty-the-coder-vscode`
+        );
+      }
+    ),
+    vscode.commands.registerCommand(
+      "kitty-the-coder.reloadTemplates",
+      async () => {
+        await conversationTypesProvider.loadConversationTypes();
+        vscode.window.showInformationMessage("Privy templates reloaded.");
+      }
+    ),
 
-    vscode.commands.registerCommand("privy.showLogs", () => {
+    vscode.commands.registerCommand("kitty-the-coder.showLogs", () => {
       mainOutputChannel.show(true);
     }),
 
-    vscode.commands.registerCommand("privy.indexRepository", () => {
+    vscode.commands.registerCommand("kitty-the-coder.indexRepository", () => {
       indexRepository({
         ai: ai,
         outputChannel: indexOutputChannel,

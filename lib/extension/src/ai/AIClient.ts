@@ -22,7 +22,7 @@ function getProviderBaseUrl(): string {
   }
   return (
     vscode.workspace
-      .getConfiguration("privy")
+      .getConfiguration("kitty-the-coder")
       .get("providerBaseUrl", defaultUrl)
       // Ensure that the base URL doesn't have a trailing slash:
       .replace(/\/$/, "")
@@ -32,22 +32,26 @@ function getProviderBaseUrl(): string {
 function getChatModel(): string {
   let model = z
     .enum(["mistral:instruct", "codellama:instruct", "custom"])
-    .parse(vscode.workspace.getConfiguration("privy").get("model"));
+    .parse(vscode.workspace.getConfiguration("kitty-the-coder").get("model"));
   if (model === "custom") {
-    return vscode.workspace.getConfiguration("privy").get("customModel", "");
+    return vscode.workspace
+      .getConfiguration("kitty-the-coder")
+      .get("customModel", "");
   }
   return model;
 }
 function getAutoCompleteModel(): string {
   return vscode.workspace
-    .getConfiguration("privy.autocomplete")
+    .getConfiguration("kitty-the-coder.autocomplete")
     .get("model", "");
 }
 
 function getProvider() {
   return z
     .enum(["llamafile", "llama.cpp", "Ollama", "OpenAI"])
-    .parse(vscode.workspace.getConfiguration("privy").get("provider"));
+    .parse(
+      vscode.workspace.getConfiguration("kitty-the-coder").get("provider")
+    );
 }
 
 function getPromptTemplate() {

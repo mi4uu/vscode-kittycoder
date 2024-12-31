@@ -1,4 +1,4 @@
-import { webviewApi } from "@privy/common";
+import { webviewApi } from "@kitty-the-coder/common";
 import { Variable } from "../template/RubberduckTemplate";
 import { resolveVariable } from "./resolveVariable";
 import { validateVariable } from "./validateVariable";

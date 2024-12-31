@@ -30,7 +30,7 @@ export async function executeRetrievalAugmentation({
 
   const fileUri = vscode.Uri.joinPath(
     vscode.workspace.workspaceFolders?.[0]?.uri ?? vscode.Uri.file(""),
-    ".privy/embedding",
+    ".kitty-the-coder/embedding",
     file
   );
 

@@ -1,5 +1,5 @@
 {
-  "name": "@privy/webview",
+  "name": "@kitty-the-coder/webview",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -12,7 +12,7 @@
     "eslint-plugin-react": "^7.32.1"
   },
   "dependencies": {
-    "@privy/common": "*",
+    "@kitty-the-coder/common": "*",
     "prismjs": "1.29.0",
     "react": "18.2.0",
     "react-copy-to-clipboard": "^5.1.0",
